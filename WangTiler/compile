@@ -1,0 +1,4 @@
+#!/bin/bash
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Tile.d" -MT"Tile.d" -o"Tile.o" "Tile.cpp"
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"WangTiler.d" -MT"WangTiler.d" -o"WangTiler.o" "WangTiler.cpp"
+g++ ./Tile.o ./WangTiler.o -lGL -lGLU -lglut -o "WangTiler"
